@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "noImplicitAny": false, // Podrías activarlo para más seguridad
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false, // Activar si prefieres más seguridad
+    "moduleResolution": "node16", // Cambié esta opción a `node16` para ESM
+    "esModuleInterop": true, // Habilitado para importar módulos ESM
+    "resolveJsonModule": true, // Habilitado por si usas JSON en tu proyecto
+    "module": "ESNext", // Específico para trabajar con módulos ESM
+    "target": "ESNext", // Habilita características modernas de JavaScript
+    "jsx": "react-jsx", // Si estás usando React
+    "strict": true, // Recomendado para tener una configuración más estricta
+    "skipDefaultLibCheck": true // Opcional, omite la comprobación de las librerías por defecto
+  }
+}
